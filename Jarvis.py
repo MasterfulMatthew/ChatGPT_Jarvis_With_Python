@@ -105,7 +105,7 @@ def main():
                                                 f.write(audio.get_wav_data())
                                                 text = transcribe_audio_to_text(filename)
                                                 response = generate_response(text)
-                                                if len(response) < 300: #max response length is 1000 characters (this is changable)
+                                                if len(response) < 1000: #max response length is 1000 characters (this is changable)
                                                     print(response) #prints out the response
                                                     speak_text(response) #speaks out the response
                                         
